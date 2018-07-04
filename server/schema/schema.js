@@ -57,7 +57,7 @@ const RootQuery = new GraphQLObjectType({
     author: {
       type: AuthorType,
       args: {
-        id: { type: GraphQLString }
+        id: { type: GraphQLID }
       },
       resolve (parent, args) {
         return Author.findById(args.id)
