@@ -21,13 +21,14 @@ class BookDetail extends Component {
           </ul>
         </div>
       )
+    } else {
+      return <div>No book selected</div>
     }
   }
 
   render() {
     return (
       <div id='book-detail'>
-        <p>Output book detail</p>
         { this.displayBook() }
       </div>
     );
